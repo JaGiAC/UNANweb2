@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sistema de Gestion</title>
+        <style>
+            html{
+                background-color:rgb(240,435,194);
+            }
+            .topD{
+                display:flex;
+                align-items:center;
+                gap:100px;
+                background-color:black;
+                color:white;
+                flex-wrap:nowrap;
+            }
+            .fimg{
+                height:100px;
+                width:270px;
+            }
+            .first{
+                background-color:black;
+                color:white;
+            }
+            .formDis{
+                display:grid;
+                grid-template-columns:1fr 500px;
+                gap:50px;
+                align-items:start;
+            }
+            .aFig{
+                margin:0;
+            }
+            .aFig img{
+                display:block;
+                width:100%;
+                height:auto;
+            }
+            .colD{
+                justify-content:center;
+                align-items: center;
+            }
+            button{
+                background-color:black;
+                color:white;
+            }
+            .barra1{
+                height:50px;
+                width:50px;
+            }
+            label{
+                display:inline-block;
+                margin-right:15px;
+                margin-bottom:10px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="first">
+            <h1>Sistema de Gestion</h1>
+            <hr />
+            <header class="topD">
+                <h3>Diseñado por: Jandir García</h3>
+                <form>
+                    <label for="buscar">Buscar</label>
+                    <input id="buscar" type="search" placeholder="Buscar...">                </form>
+                </form>
+                <img class="fimg" src="../assets/ugs.jpeg"/>
+            </header>
+        </div>
+        <br />
+        <main class="formDis">
+            <section class="colIz">
+                <form>
+                    <label for="tipoD">Tipo Documento       </label>
+                    <select id="tipoD">
+                        <option selected disabled>Seleccionar</option>
+                        <option>CEDULA DE CIUDADANIA</option>
+                        <option>PASAPORTE</option>
+                        <option>ACTA</option>
+                    </select><br />
+                    <label for="NDoc">Nro. Documento</label>
+                    <input id="NDoc" type="text" ><br />
+                    <label for="surname">Apellidos</label>
+                    <input id="surname" type="text" ><br />
+                    <label for="names">Nombres</label>
+                    <input id="names" type="text" ><br />
+                    <label for="correo">Correo</label>
+                    <input id="correo" type="email" ><br />
+                    <label for="fNac">Fecha de Nacimiento</label>
+                    <input id="fNac" type="date" ><br />
+                    <label for="dirN">Direccion</label>
+                    <input id="dirN" type="text" ><br />
+                    <label for="muNi">Municipio</label>
+                    <select id="muNi">
+                        <option selected disabled>Seleccionar</option>
+                        <option>CHINANDEGA</option>
+                        <option>LEON</option>
+                        <option>NINDIRI</option>
+                    </select><br />
+                    <label for="fechaAf">Fecha Afiliacion</label>
+                    <input id="fechaAf" type="date" ><br />
+                    <label for="sexo">Sexo</label>
+                    <select id="sexo">
+                        <option selected disabled>Seleccionar</option>
+                        <option>MASCULINO</option>
+                        <option>FEMENINO</option>
+                    </select><br />
+                    <label for="estR">Estudios Realizados</label>
+                    <select id="estR">
+                        <option selected disabled>Seleccionar</option>
+                        <option>BACHILLER</option>
+                        <option>UNIVERSIDAD</option>
+                        <option>ESTUDIOS PRIMARIOS</option>
+                    </select><br />
+                    <label for="estC">Estado Civil</label>
+                    <select id="estC">
+                        <option selected disabled>Seleccionar</option>
+                        <option>CASADO/A</option>
+                        <option>SOLTERO/A</option>
+                        <option>OTRO</option>
+                    </select><br />
+                    <label for="cel1">Celular 1</label>
+                    <input id="cel1" type="text" ><br />
+                    <label for="cel2">Celular 2</label>
+                    <input id="cel2" type="text" ><br />
+                    <label for="fijo1">Fijo 1</label>
+                    <input id="fijo1" type="text" ><br />
+                    <label for="fijo2">Fijo 2</label>
+                    <input id="fijo2" type="text" ><br /><br />
+                </form>
+                <button type="button">Agregar Nuevo</button>
+                    <button type="button">Deshacer Registro</button>
+                    <button type="sumbit">Guardar Registro</button>
+                    <button type="button">Eliminar Registro</button>
+                    <button type="button">Imprimir Registro</button>
+                    <button type="button">Buscar Registro</button>
+            </section>
+            
+            <aside class="colD">
+                <figure class="aFig">
+                    <img src="../assets/inventario.jpeg"/>
+                </figure>
+                <br />
+                <button><img class="barra1" src="../assets/reproductorA.jpeg"/></button>
+                <button><img class="barra1" src="../assets/reproductor.png"/></button>
+                <button><img class="barra1" src="../assets/reprA.png"/></button>
+                <button><img class="barra1" src="../assets/lupa.png"/></button>
+            </aside>
+        </main>
+    </body>
+</html>
